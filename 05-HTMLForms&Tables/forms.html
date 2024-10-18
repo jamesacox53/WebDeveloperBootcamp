@@ -30,6 +30,23 @@
 
         <button type="submit">Submit</button>
     </form>
+
+    <h2>Hijacking Searches</h2>
+
+    <h3>Search Udemy</h3>
+
+    <form action="https://www.udemy.com/courses/search">
+        <input type="hidden" name="src" value="ukw">
+        <input type="text" name="q">
+        <button>Search Udemy</button>
+    </form>
+
+    <h3>Search Google</h3>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
 </body>
 
 </html>
