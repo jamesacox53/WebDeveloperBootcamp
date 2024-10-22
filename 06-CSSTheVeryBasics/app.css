@@ -1,3 +1,13 @@
 h3 {
     color: indigo;
+    background-color: plum;
+}
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+p {
+    color: olive;
 }
