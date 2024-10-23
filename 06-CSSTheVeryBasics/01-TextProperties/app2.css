@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: blue underline;
+    letter-spacing: 10px;
+}
+
+.example1 {
+    text-align: right;
+    font-weight: bold;
+}
+
+h2 {
+    text-decoration: overline wavy;
+}
+
+h3 {
+    text-decoration: red line-through;
+}
+
+a {
+    text-decoration: none;
+}
+
+.example2 {
+    line-height: 2;
+}
+
+.example3 {
+    line-height: 0.5;
+}
