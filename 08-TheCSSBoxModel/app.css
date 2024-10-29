@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 div {
     width: 200px;
     height: 200px;
@@ -8,6 +12,7 @@ h1 {
     width: 100px;
     padding-left: 100px;
     padding-top: 50px;
+    margin: 0;
 }
 
 #one {
@@ -16,6 +21,8 @@ h1 {
     border-color: black;
     border-style: solid;
     /* box-sizing: border-box; */
+    margin-left: 50px;
+    margin-bottom: 100px;
 }
 
 #two {
