@@ -1,0 +1,36 @@
+body {
+    background-color: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+#main-navbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#main-navbar .navbar-brand {
+    color: #EA1C2C;
+}
+
+#main-navbar .nav-link {
+    color: white;
+}
+
+#main-navbar .nav-link:hover {
+    color: #EA1C2C;
+}
+
+#heading-group span {
+    color: #EA1C2C;
+}
+
+#heading-group h2 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+@media(max-width:1300px) {
+    #heading-group h2 {
+        font-size: 3rem;
+    }
+}
