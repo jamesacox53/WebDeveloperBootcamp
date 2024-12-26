@@ -12,17 +12,19 @@ let attempts = 1;
 while(parseInt(guess) != targetNum) {
     if (guess == 'q') break;
 
-    attempts++;
+    guess = parseInt(guess);
 
-    if (!guess) {
-        guess = prompt('Please enter a valid guess!');
-    
-    } else if (guess > targetNum) {
+    if (guess > targetNum) {
         guess = prompt('Too high! Please enter a new guess!');
+        attempts++;
+    
+    } else if (guess < targetNum) {
+        guess = prompt('Too low! Please enter a new guess!');
+        attempts++;
     
     } else {
-        guess = prompt('Too low! Please enter a new guess!');
-    } 
+        guess = prompt('Invalid guess! Please enter a new guess!');
+    }
 }
 
 if (guess == 'q') {
