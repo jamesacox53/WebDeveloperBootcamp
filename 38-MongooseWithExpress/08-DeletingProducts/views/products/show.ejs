@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= productObj.name %></title>
+</head>
+<body>
+    <h1><%= productObj.name %></h1>
+    <ul>
+        <li>Price: $<%= productObj.price %></li>
+        <li>Category: <%= productObj.category %></li>
+    </ul>
+    <a href="/products">All Products</a>
+    <a href="/products/<%= productObj._id %>/edit">Edit Product</a>
+    <form action="/products/<%= productObj._id %>?_method=DELETE" method="post">
+        <button>Delete</button>
+    </form>
+</body>
+</html>
