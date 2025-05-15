@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= categoryStr %> Products</title>
+</head>
+<body>
+    <h1><%= categoryStr %> Products</h1>
+    <ul>
+        <% for (let productObj of productArr) { %>
+            <li><a href="/products/<%= productObj._id %>"><%= productObj.name %></a></li>
+        <% } %>
+    </ul>
+    <a href="/products/new">New Product</a>
+    <% if(categoryStr != 'All') { %>
+        <a href="/products">All Products</a>
+    <% } %>
+</body>
+</html>
