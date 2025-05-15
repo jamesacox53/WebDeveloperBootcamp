@@ -37,6 +37,20 @@ app.get('/farms/new', (req, res) => {
     res.render('farms/new.ejs');
 });
 
+app.get('/farms/:id', wrapAsync(async (req, res, next) => {
+    const { id } = req.params;
+    const farmObj = await Farm.findById(id);
+
+    if (!farmObj)
+        throw new AppError('Product not found', 404);
+
+    const optionsObj = {
+        farmObj: farmObj
+    };
+
+    res.render('farms/show.ejs', optionsObj);
+}));
+
 app.post('/farms', wrapAsync(async (req, res, next) => {
     const newFarmObj = new Farm(req.body);
     await newFarmObj.save();

@@ -9,7 +9,7 @@
     <h1>All Farms</h1>
     <ul>
         <% for (let farmObj of farmArr) { %>
-            <li><%= farmObj.name %></li>
+            <li><a href="/farms/<%= farmObj._id %>"><%= farmObj.name %></a></li>
         <% } %>
     </ul>
 </body>
